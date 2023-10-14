@@ -1,27 +1,21 @@
-#include <stdio.h>
-
-void swap(int,int);
-
-
-int main ()
-{
-  int a, b;
- 
-  printf("Enter two numbers: ");
-  scanf("%d%d", &a, &b);
-
-  printf("Before Swapping : a=%d,b=%d\n",a,b);
-
-  swap(&a,&b);
-
-  printf("After Swapping : a=%d,b=%d\n",a,b);
-  return 0;
+#include<stdio.h>
+int swapo(int a,int b){
+  a=a+b;
+  b=a-b;
+  a=a-b;
+  printf("after returning a= %d & b= %d\n",a,b);
 }
- 
-
-void swap(int a,int b){
-    int tmp;
-    tmp = a;
-    a=b;
-    b=tmp;
+int swap(int a,int b){
+  int temp =a;
+  a = b;
+  b = temp;
+  printf("after returning a= %d & b= %d\n",a,b);
+}
+int main()
+{
+  int a,b;
+  printf("please entr a and b \n");
+  scanf("%d %d",&a ,&b);
+  printf("before returning a= %d & b= %d\n",a,b);
+  swap(a,b);
 }
