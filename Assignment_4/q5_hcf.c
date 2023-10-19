@@ -12,7 +12,7 @@
        } 
      else 
       { 
-            d= hcf(b,a); 
+            d= hcf(b,a);  
       } 
             printf("HCF is= %d",d); 
             
